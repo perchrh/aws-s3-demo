@@ -13,4 +13,8 @@ This file should contain lines in the following format:
     [default]
     aws_access_key_id = your_access_key_id
     aws_secret_access_key = your_secret_access_key
+
+Correspondinlgy, in the same folder, create a file called "config" with the following contents:
+    
+    [default]
     region = eu-central-1 #frankfurt
