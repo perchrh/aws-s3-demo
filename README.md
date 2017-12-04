@@ -12,7 +12,7 @@ Instructions for MacOS:
 
     brew install python3 pip3
     sudo -H pip3 install awscli
-    aws configure # med Security Credentials (=access keys)
+    aws configure # with Security Credentials (=access keys)
 
 ### 2 Configure AWS credentials etc ###
 Get the access key and the secret access key. 
