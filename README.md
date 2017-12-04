@@ -1,5 +1,5 @@
-# aws-s3-demo
-Eika Hackathon
+# S3 Hackaton
+S3 capabilities and usage
 
 ## Necessary preparations: ##
 
