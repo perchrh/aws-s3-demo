@@ -27,7 +27,9 @@ Correspondingly, in the same folder, create a file called "config" with the foll
     
     [default]
     region = eu-central-1 #frankfurt
-
+    
+### Test access to AWS through the Java-SDK ###
+Run this project's code to test that the access configured in the previous step works.
 
 ## Documentation ##
 Official AWS S3 instructions, https://aws.amazon.com/documentation/sdk-for-java/
