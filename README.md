@@ -1,4 +1,4 @@
-# S3 Hackaton
+# S3 Hackathon
 S3 capabilities and usage
 
 ## Necessary preparations: ##
