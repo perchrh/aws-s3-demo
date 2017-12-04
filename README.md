@@ -4,7 +4,7 @@ S3 capabilities and usage
 ## Necessary preparations: ##
 
 
-### 1 Installing AWS command line tools ###
+### 1 Install AWS command line tools ###
 
 Ref https://aws.amazon.com/cli/
 $ brew install python3 pip3
