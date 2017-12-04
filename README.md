@@ -40,4 +40,8 @@ Signing up for AWS and creating an account and a IAM-user, http://docs.aws.amazo
 While there is a preview-version of the v2 aws Java-SDK, it is not suited for normal use - it's lacking in documentation and in examples. The documentation is short and for preview-1, and preview-5 has API-changes.
 
 
+### Code examples (v1 api) ###
+Check out 
+https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/s3
 
+*There are no code examples for v2 api, only (outdated) snippets*
