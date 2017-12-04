@@ -18,3 +18,11 @@ Correspondinlgy, in the same folder, create a file called "config" with the foll
     
     [default]
     region = eu-central-1 #frankfurt
+
+
+Documentation
+-------
+Official AWS S3 instructions: https://www.youtube.com/playlist?list=PL77cy_t1wkZtYlWt26cFH5wWMQPHSGefa
+
+
+
