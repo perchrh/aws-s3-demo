@@ -12,21 +12,25 @@ Instructions for MacOS:
 
     brew install python3 pip3
     sudo -H pip3 install awscli
-    aws configure # with Security Credentials (=access keys)
 
 ### 2 Configure AWS credentials etc ###
-Get the access key and the secret access key. 
+Get the access key and the secret access key from the Security Credentials section in AWS. 
 
 Set credentials in the AWS credentials profile file on your local system, located at:
 ~/.aws/credentials on Linux, macOS, or Unix
-C:\Users\USERNAME \.aws\credentials on Windows
-This file should contain lines in the following format:
+C:\Users\USERNAME \.aws\credentials on Windows.
+
+Use the command line tools mentioned in step (1) to write the credentials and configuration: 
+    
+    aws configure
+
+The resulting 'credentials' file should contain lines in the following format:
 
     [default]
     aws_access_key_id = your_access_key_id
     aws_secret_access_key = your_secret_access_key
 
-Correspondingly, in the same folder, create a file called "config" with the following contents:
+Correspondingly, in the same folder, a 'config' file should be created with content like below: 
     
     [default]
     region = eu-central-1 #frankfurt
