@@ -6,10 +6,11 @@ S3 capabilities and usage
 
 ### 1 Install AWS command line tools ###
 
-Ref https://aws.amazon.com/cli/
-$ brew install python3 pip3
-$ sudo -H pip3 install awscli
-$ aws configure # med Security Credentials (=access keys)
+Reference: https://aws.amazon.com/cli/
+
+    brew install python3 pip3
+    sudo -H pip3 install awscli
+    aws configure # med Security Credentials (=access keys)
 
 ### 2 Configure AWS credentials etc ###
 Get the access key and the secret access key. 
