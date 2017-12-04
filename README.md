@@ -8,6 +8,8 @@ S3 capabilities and usage
 
 Reference: https://aws.amazon.com/cli/
 
+Instructions for MacOS:
+
     brew install python3 pip3
     sudo -H pip3 install awscli
     aws configure # med Security Credentials (=access keys)
