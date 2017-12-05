@@ -10,17 +10,19 @@ Reference: https://aws.amazon.com/cli/
 
 Instructions for MacOS:
 
-    brew install python3 pip3
+    brew install python3
     sudo -H pip3 install awscli
 
 ### 2 Configure AWS credentials etc ###
-Get the access key and the secret access key from the Security Credentials section in AWS. 
+Get the access key and the secret access key from the "Access keys" tab on the "Security Credentials" page under "My Account", in AWS.
+Create a new Access Key and download the keyfile. The keyfile contains the two mentioned keys.
 
 Set credentials in the AWS credentials profile file on your local system, located at:
 ~/.aws/credentials on Linux, macOS, or Unix
 C:\Users\USERNAME \.aws\credentials on Windows.
 
-Use the command line tools mentioned in step (1) to write the credentials and configuration: 
+Use the command line tools mentioned in step (1) to write the credentials and configuration. 
+Select 'eu-central-1' as the region:  
     
     aws configure
 
@@ -36,7 +38,8 @@ Correspondingly, in the same folder, a 'config' file should be created with cont
     region = eu-central-1 #frankfurt
     
 ### 3 Test access to AWS through the Java-SDK ###
-Run this project's code to test that the access configured in the previous step works.
+Run this project's code to test that the access configured in the previous step works. 
+Use the 'aws.example.s3.ListBuckets' main method class for testing access. 
 
 ## Documentation ##
 Official AWS S3 instructions, https://aws.amazon.com/documentation/sdk-for-java/
@@ -54,3 +57,12 @@ Check out
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/s3
 
 *There are no code examples for v2 api, only (outdated) snippets*
+
+### Exercise 0 ###
+List your S3-buckets. You may receive an empty list. 
+
+### Exercise 1 ###
+Create a bucket. Check that it appears when you list buckets.
+ 
+### Exercise 2 ###
+Add a file to your bucket. Check that it appears when you list objects for your bucket. 

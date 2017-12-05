@@ -27,7 +27,7 @@ import java.nio.file.Paths;
  * This code expects that you have AWS credentials set up per:
  * http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
  */
-public class PutObject {
+public class PutObjectInBucket {
     public static void main(String[] args) {
         final String USAGE = "\n" +
                 "To run this example, supply the name of an S3 bucket and a file to\n" +
