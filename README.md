@@ -16,6 +16,7 @@ Instructions for MacOS:
 ### 2 Configure AWS credentials etc ###
 Get the access key and the secret access key from the "Access keys" tab on the "Security Credentials" page under "My Account", in AWS.
 Create a new Access Key and download the keyfile. The keyfile contains the two mentioned keys.
+There is a guide from Amazon if you need more information, http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
 
 Set credentials in the AWS credentials profile file on your local system, located at:
 ~/.aws/credentials on Linux, macOS, or Unix
@@ -53,7 +54,7 @@ While there is a preview-version of the v2 aws Java-SDK, it is not suited for no
 
 
 ### Code examples (v1 api) ###
-Check out 
+In addition to the example in this repo, check out 
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/s3
 
 *There are no code examples for v2 api, only (outdated) snippets*
@@ -65,4 +66,11 @@ List your S3-buckets. You may receive an empty list.
 Create a bucket. Check that it appears when you list buckets.
  
 ### Exercise 2 ###
-Add a file to your bucket. Check that it appears when you list objects for your bucket. 
+Add a (small) file to your bucket. Check that it appears when you list objects for your bucket. 
+
+### Exercise 3 ###
+Download an object from your bucket, write it to a local file. 
+
+### Exercise 4 ###
+Add one or more tags (key=value) to one or more objects in your bucket. 
+List objects that contain a tag with a certain name, and output the value of the tag.

@@ -30,9 +30,9 @@ public class ListBuckets {
         final AmazonS3 s3 = AmazonS3ClientBuilder.defaultClient();
         List<Bucket> buckets = s3.listBuckets();
         if (buckets.isEmpty()) {
-            System.out.println("You have no Amazon buckets");
+            System.out.println("You have no S3 buckets");
         } else {
-            System.out.println("Your Amazon S3 buckets are:");
+            System.out.println("Your S3 buckets are:");
             for (Bucket b : buckets) {
                 System.out.println("* " + b.getName());
             }
