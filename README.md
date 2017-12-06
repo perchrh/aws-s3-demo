@@ -3,20 +3,26 @@ S3 capabilities and usage
 
 ## Necessary preparations: ##
 
+### 0 Create and configure AWS account ###
+The Hackathon admin does this in advance.
+After signing up for AWS, create an IAM user with programmatic access and full permissions to S3, using the AWS Console.
+Create an encryption key, and give the mentioned user access to use the key.
+
+Download the user's keyfile, containing the access key and the secret access key. Share this file with the participants. Also share the Key ID of the encryption key you created.
+There is a guide from Amazon if you need more information, http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
 
 ### 1 Install AWS command line tools ###
 
 Reference: https://aws.amazon.com/cli/
 
+All systems: Install python3, then use python3's pip to install the 'awscli' package.
 Instructions for MacOS:
 
     brew install python3
     sudo -H pip3 install awscli
 
 ### 2 Configure AWS credentials etc ###
-Get the access key and the secret access key from the "Access keys" tab on the "Security Credentials" page under "My Account", in AWS.
-Create a new Access Key and download the keyfile. The keyfile contains the two mentioned keys.
-There is a guide from Amazon if you need more information, http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
+Get the access key and the secret access key from the hackathon admin.
 
 Set credentials in the AWS credentials profile file on your local system, located at:
 ~/.aws/credentials on Linux, macOS, or Unix
@@ -74,3 +80,7 @@ Download an object from your bucket, write it to a local file.
 ### Exercise 4 ###
 Add one or more tags (key=value) to one or more objects in your bucket. 
 List objects that contain a tag with a certain name, and output the value of the tag.
+
+### Exercise 5 ###
+Encrypt a file during transfer, for upload and for download.
+Hint: See EncryptionEnabledS3Client.java
