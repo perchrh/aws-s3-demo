@@ -95,6 +95,10 @@ A bucket can be configured with a **deletion policy**, a custom set of rules tha
 Objects in S3 can be given **tags**. A tag is a key-value pair, for example project=Indigo. 
 See http://docs.aws.amazon.com/AmazonS3/latest/dev/object-tagging.html 
 
+**Versioning** enables you to keep multiple versions of an object in one bucket, for example my-image.jpg (version 1) and 
+my-image.jpg (version 2). You might want to enable versioning to protect yourself from unintended overwriten and deletions or to archive objects 
+so that you can retrieve previous versions of them. Versioning is a feature enabled per bucket. 
+
 ### Exercise 0 ###
 List your S3-buckets. You may receive an empty list. 
 
