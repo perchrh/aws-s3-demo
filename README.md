@@ -65,7 +65,7 @@ https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/s3
 *There are no code examples for v2 api, only (outdated) snippets*
 
 ### Amazon cloud basic concepts ### 
-S3 is (one of) Amazon Cloud's storage solution. 
+S3 is one of Amazon Cloud's storage solutions. 
 Amazon Cloud is called AWS. 
 
 A **bucket** is a container for objects stored in Amazon S3. Every object is contained in a bucket. 
@@ -74,7 +74,8 @@ An **object** in this context can be thought of as a file.
 
 Inside a bucket, objects are named using **keys**. A key can be photos/2017/july/DCP_123123.jpg. 
 Every key must be unique, and it refers to a single object. 
-Note that you can put separators like '/' in a key to group keys, similar to a folder structure on a PC. 
+Note that you can put separators like '/' in a key to group keys, similar to a folder structure on a PC.
+For more information about objects, including metadata (S3-provided and user-provided), see http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingObjects.html
 
 A bucket is located in a geographical **region**. There are mechanisms to mirror buckets to other regions and so. 
 A region is for example EU (Frankfurt). When you put data in a bucket, you are guaranteed that Amazon will not store the data elsewhere than the bucket's region, 
@@ -84,7 +85,15 @@ if you do not explicitly enable mirroring or similar features.
 requesters, resources, and aspects of the request (e.g. IP address). 
 For example, a user can be given access to a particular bucket, from the corporate network only, during business hours only, and through HTTPS only. 
 
-Data can be encrypted at rest (server-side) and/or in-flight (upload or download time).
+Data can be encrypted at rest (server-side) and/or in-flight (upload or download time). The AWS user can provide the encryption key to use. 
+See http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html
+
+**CloudTrail** is an AWS service that can be used to log access and usage of S3, for example for audit log purposes. 
+
+A bucket can be configured with a **deletion policy**, a custom set of rules that say when to delete objects, for example based on age. 
+
+Objects in S3 can be given **tags**. A tag is a key-value pair, for example project=Indigo. 
+See http://docs.aws.amazon.com/AmazonS3/latest/dev/object-tagging.html 
 
 ### Exercise 0 ###
 List your S3-buckets. You may receive an empty list. 
