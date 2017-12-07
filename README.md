@@ -5,8 +5,9 @@ S3 capabilities and usage
 
 ### 0 Create and configure AWS account ###
 The Hackathon admin does this in advance.
-After signing up for AWS, create an IAM user with programmatic access and full access to S3 and Cloudtrail, using the AWS Console.
-Create an encryption key, using default settings, and give the mentioned user access to use the key.
+After signing up for AWS, create an IAM user with programmatic access and the security policies of full access to S3 and Cloudtrail, using the AWS Console.
+See 'Signing up for AWS and creating an account and a IAM-user', at http://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/signup-create-iam-user.html
+Create an encryption key, using default settings, and give the mentioned user usage access to the key.
 
 Download the user's keyfile, containing the access key and the secret access key. Share this file with the participants. Also share the Key ID of the encryption key you created.
 There is a guide from Amazon if you need more information, http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
@@ -49,11 +50,9 @@ Run this project's code to test that the access configured in the previous step 
 Use the 'aws.example.s3.ListBuckets' main method class for testing access. 
 
 ## Documentation ##
-Official AWS S3 instructions, https://aws.amazon.com/documentation/sdk-for-java/
+Official AWS S3 documentation, https://aws.amazon.com/documentation/s3/
 
 Youtube playlist, https://www.youtube.com/playlist?list=PL77cy_t1wkZtYlWt26cFH5wWMQPHSGefa
-
-Signing up for AWS and creating an account and a IAM-user, http://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/signup-create-iam-user.html
 
 ### V2 API not recommended (yet) ###
 While there is a preview-version of the v2 aws Java-SDK, it is not suited for normal use - it's lacking in documentation and in examples. The documentation is short and for preview-1, and preview-5 has API-changes.
@@ -85,6 +84,7 @@ List objects that contain a tag with a certain name, and output the value of the
 Encrypt a file during transfer, for upload and for download. 
 Requires "Java Cryptography Extension (JCE)" installed if Using Oracle JDK (included in OpenJDK). 
 Get it from http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
+
 Put the new jar files in the JRE's security folder, for example /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/security
 
 Hint: you can list your AWS hosted keys using 'aws kms list-keys'
