@@ -82,5 +82,9 @@ Add one or more tags (key=value) to one or more objects in your bucket.
 List objects that contain a tag with a certain name, and output the value of the tag.
 
 ### Exercise 5 ###
-Encrypt a file during transfer, for upload and for download.
-Hint: See EncryptionEnabledS3Client.java
+Encrypt a file during transfer, for upload and for download. 
+Requires "Java Cryptography Extension (JCE)" installed if Using Oracle JDK (included in OpenJDK). 
+Get it from http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
+Put the new jar files in the JRE's security folder, for example /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/security
+
+Hint: you can list your AWS hosted keys using 'aws kms list-keys'

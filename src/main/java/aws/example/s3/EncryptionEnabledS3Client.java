@@ -37,13 +37,13 @@ public class EncryptionEnabledS3Client {
                 .withEncryptionMaterials(new KMSEncryptionMaterialsProvider(HOSTED_KEY_ID))
                 .build();
 
-        // Upload the object, with encryption
+        // Upload the object, encrypting it during transfer
         String objectContent = "some contents";
         encryptionEnabledClient.putObject(BUCKET_NAME, ENCRYPTED_KEY, objectContent);
 
-        // Download the object, and decrypt it
-        String encryptedObject = encryptionEnabledClient.getObjectAsString(BUCKET_NAME, ENCRYPTED_KEY);
-        System.out.println(encryptedObject);
+        // Download the object, decrypting it after transfer
+        String decryptedObject = encryptionEnabledClient.getObjectAsString(BUCKET_NAME, ENCRYPTED_KEY);
+        System.out.println(decryptedObject);
     }
 
 }
