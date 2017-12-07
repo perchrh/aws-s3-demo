@@ -64,6 +64,28 @@ https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/s3
 
 *There are no code examples for v2 api, only (outdated) snippets*
 
+### Amazon cloud basic concepts ### 
+S3 is (one of) Amazon Cloud's storage solution. 
+Amazon Cloud is called AWS. 
+
+A **bucket** is a container for objects stored in Amazon S3. Every object is contained in a bucket. 
+
+An **object** in this context can be thought of as a file. 
+
+Inside a bucket, objects are named using **keys**. A key can be photos/2017/july/DCP_123123.jpg. 
+Every key must be unique, and it refers to a single object. 
+Note that you can put separators like '/' in a key to group keys, similar to a folder structure on a PC. 
+
+A bucket is located in a geographical **region**. There are mechanisms to mirror buckets to other regions and so. 
+A region is for example EU (Frankfurt). When you put data in a bucket, you are guaranteed that Amazon will not store the data elsewhere than the bucket's region, 
+if you do not explicitly enable mirroring or similar features. 
+
+**Bucket policies** provide centralized access control to buckets and objects based on a variety of conditions, including Amazon S3 operatons, 
+requesters, resources, and aspects of the request (e.g. IP address). 
+For example, a user can be given access to a particular bucket, from the corporate network only, during business hours only, and through HTTPS only. 
+
+Data can be encrypted at rest (server-side) and/or in-flight (upload or download time).
+
 ### Exercise 0 ###
 List your S3-buckets. You may receive an empty list. 
 
