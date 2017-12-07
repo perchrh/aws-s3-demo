@@ -77,7 +77,7 @@ Every key must be unique, and it refers to a single object.
 Note that you can put separators like '/' in a key to group keys, similar to a folder structure on a PC.
 For more information about objects, including metadata (S3-provided and user-provided), see http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingObjects.html
 
-A bucket is located in a geographical **region**. There are mechanisms to mirror buckets to other regions and so. 
+A bucket is located in a geographical **region**. There are mechanisms to mirror buckets to other regions and so (Cross region replication).
 A region is for example EU (Frankfurt). When you put data in a bucket, you are guaranteed that Amazon will not store the data elsewhere than the bucket's region, 
 if you do not explicitly enable mirroring or similar features. 
 
@@ -98,6 +98,17 @@ See http://docs.aws.amazon.com/AmazonS3/latest/dev/object-tagging.html
 **Versioning** enables you to keep multiple versions of an object in one bucket, for example my-image.jpg (version 1) and 
 my-image.jpg (version 2). You might want to enable versioning to protect yourself from unintended overwriten and deletions or to archive objects 
 so that you can retrieve previous versions of them. Versioning is a feature enabled per bucket. 
+
+**Cloudfront** is Amazon's content delivery network, that can be used for caching frequently used objects near the users' location. 
+There is a Cloudfront cache location in Stockholm, for example. 
+
+**Cloudwatch** can collect statistics etc on S3 usage. 
+
+The AWS **Storage gateway** can be used to copy files to S3 using normal means, for example through an NFS interface, VTL og iSCSI. 
+
+A bucket can be configured for **S3 infrequent access**, reducing costs, suitable for example for certain archive solutions.  
+
+AWS Identity and Access Management (**IAM**) enables you to securely control access to AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. 
 
 ### Exercise 0 ###
 List your S3-buckets. You may receive an empty list. 
