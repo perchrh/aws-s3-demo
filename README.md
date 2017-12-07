@@ -5,8 +5,8 @@ S3 capabilities and usage
 
 ### 0 Create and configure AWS account ###
 The Hackathon admin does this in advance.
-After signing up for AWS, create an IAM user with programmatic access and full permissions to S3, using the AWS Console.
-Create an encryption key, and give the mentioned user access to use the key.
+After signing up for AWS, create an IAM user with programmatic access and full access to S3 and Cloudtrail, using the AWS Console.
+Create an encryption key, using default settings, and give the mentioned user access to use the key.
 
 Download the user's keyfile, containing the access key and the secret access key. Share this file with the participants. Also share the Key ID of the encryption key you created.
 There is a guide from Amazon if you need more information, http://docs.aws.amazon.com/java-sdk/latest/developer-guide/setup-credentials.html
