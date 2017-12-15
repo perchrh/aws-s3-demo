@@ -40,6 +40,10 @@ Correspondingly, in the same folder, a 'config' file should be created with cont
     region = eu-central-1 #frankfurt
     
 ### 3 Test access to AWS through the Java-SDK ###
+Try this on the command line to see if the previous step worked:
+
+     aws s3 ls
+
 Run this project's code to test that the access configured in the previous step works. 
 Use the 'aws.example.s3.ListBuckets' main method class for testing access. 
 
