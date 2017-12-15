@@ -16,12 +16,6 @@ There is a guide from Amazon if you need more information, http://docs.aws.amazo
 
 Reference: https://aws.amazon.com/cli/
 
-All systems: Install python3, then use python3's pip to install the 'awscli' package.
-Instructions for MacOS:
-
-    brew install python3
-    sudo -H pip3 install awscli
-
 ### 2 Configure AWS credentials etc ###
 Get the access key and the secret access key from the hackathon admin.
 
